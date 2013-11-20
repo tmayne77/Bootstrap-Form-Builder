@@ -24,5 +24,9 @@ require.config({
   }
 });
 require([ 'app/app'], function(app){
-  app.initialize();
+  if (typeof(formObjectToLoad) == "undefined"){
+    app.initialize();	
+  } else {
+    app.initialize(formObjectToLoad);	
+  }
 });

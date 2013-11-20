@@ -9,6 +9,7 @@ define([
     , className: "tab-pane"
     , initialize: function() {
       this.id = this.options.title.toLowerCase().replace(/\W/g,'');
+	  this.display = this.options.display;
       this.tabNavTemplate = _.template(_tabNavTemplate);
       this.render();
     }
@@ -23,9 +24,10 @@ define([
         that.$el.append(that.options.content);
       }
       // Render & append nav for tab
-      $("#formtabs").append(this.tabNavTemplate({title: this.options.title, id: this.id}))
+      $("#formtabs").append(this.tabNavTemplate({title: this.options.title, id: this.id, display: this.display}))
       // Render tab
       this.$el.attr("id", this.id);
+	  this.$el.attr("display", this.display);
       this.$el.appendTo(".tab-content");
       this.delegateEvents();
     }

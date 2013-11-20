@@ -15,7 +15,10 @@ define([
       this.collection.on("add", this.render, this);
       this.collection.on("remove", this.render, this);
       this.collection.on("change", this.render, this);
-      PubSub.on("mySnippetDrag", this.handleSnippetDrag, this);
+	  //this.collection.on("add", this.toJson, this);
+	  //this.collection.on("remove", this.toJson, this);
+	  //this.collection.on("change", this.toJson, this);
+	  PubSub.on("mySnippetDrag", this.handleSnippetDrag, this);
       PubSub.on("tempMove", this.handleTempMove, this);
       PubSub.on("tempDrop", this.handleTempDrop, this);
       this.$build = $("#build");
@@ -33,10 +36,13 @@ define([
       $("#render").val(that.renderForm({
         text: _.map(this.collection.renderAllClean(), function(e){return e.html()}).join("\n")
       }));
+	  $("#formbuilderJSON").val(JSON.stringify(this.collection.toJSON()));
       this.$el.appendTo("#build form");
       this.delegateEvents();
     }
-
+	//, toJson: function() {
+	//	console.log(this.collection.toJSON());
+	//}
     , getBottomAbove: function(eventY){
       var myFormBits = $(this.$el.find(".component"));
       var topelement = _.find(myFormBits, function(renderedSnippet) {

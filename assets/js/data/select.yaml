@@ -13,6 +13,10 @@
       label  : Options
       type   : textarea-split
       value  : ["Option one", "Option two"]
+    required:
+      label  : Required
+      type   : checkbox
+      value  : false
     inputsize:
       label: Input Size
       type: select
@@ -56,6 +60,10 @@
       label  : Options
       type   : textarea-split
       value  : ["Option one", "Option two"]
+    required:
+      label  : Required
+      type   : checkbox
+      value  : false
     inputsize:
       label: Input Size
       type: select

@@ -1,10 +1,21 @@
 <!-- Multiple Checkboxes -->
 <div class="control-group">
-  <label class="control-label" for="<%= name %>"><%= label %></label>
-  <div class="controls"><% _.each(checkboxes, function(checkbox, i){ %>
-    <label class="checkbox" for="<%= name+'-'+i %>">
-      <input type="checkbox" name="<%= name %>" id="<%= name+'-'+i %>" value="<%= checkbox %>"<% if(required){ %> required="required"<% } %>>
-      <%= checkbox %>
-    </label><% }); %>
+  <label class="control-label" for="<%= name %>"><%= label %><% if (required) { %><span class="requiredNotation">*</span><% } %></label>
+  <div class="controls"  data-val-required="<%= required %>" data-val-controllabel="<%= label %>" >
+    <% if (checkboxes.length > 1) { %>
+	  <div class="checkboxList" data-val-this="true" data-val-listname="<%= name %>" data-val-fieldlabel="<%= label %> >
+		<% _.each(checkboxes, function(checkbox, i){ %>
+		<label class="checkbox" for="<%= name+'-'+i %>">
+			<input type="checkbox" name="<%= name %>" id="<%= name+'-'+i %>" value="<%= checkbox %>"<% if(required){ %> required="required"<% } %>>
+			<%= checkbox %>
+		</label><% }); %>
+      </div>	 
+	<% } else { %>
+		<% _.each(checkboxes, function(checkbox, i){ %>
+		<label class="checkbox" for="<%= name+'-'+i %>">
+			<input type="checkbox" data-val-this="true" name="<%= name %>" id="<%= name+'-'+i %>" value="<%= checkbox %>"<% if(required){ %> required="required"<% } %>>
+			<%= checkbox %>
+		</label><% }); %>
+	<% } %>
   </div>
 </div>

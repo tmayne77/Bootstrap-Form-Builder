@@ -1,190 +1,378 @@
 [
   {
+    "title": "Single Button",
     "fields": {
       "id": {
-        "type": "input",
         "label": "ID / Name",
-        "value": "filebutton"
-      },
-      "label": {
         "type": "input",
-        "label": "Label Text",
-        "value": "File Button"
-      }
-    },
-    "title": "File Button"
-  },
-  {
-    "fields": {
-      "buttontype": {
-        "type": "select",
-        "label": "Button Type",
-        "value": [
-          {
-            "label": "Default",
-            "value": "btn-default",
-            "selected": false
-          },
-          {
-            "label": "Primary",
-            "value": "btn-primary",
-            "selected": true
-          },
-          {
-            "label": "Info",
-            "value": "btn-info",
-            "selected": false
-          },
-          {
-            "label": "Success",
-            "value": "btn-success",
-            "selected": false
-          },
-          {
-            "label": "Warning",
-            "value": "btn-warning",
-            "selected": false
-          },
-          {
-            "label": "Danger",
-            "value": "btn-danger",
-            "selected": false
-          },
-          {
-            "label": "Inverse",
-            "value": "btn-inverse",
-            "selected": false
-          }
-        ]
-      },
-      "id": {
-        "type": "input",
-        "label": "ID / Name",
         "value": "singlebutton"
       },
+      "actiontype": {
+        "label": "Action",
+        "type": "label",
+        "value": "Cancel"
+      },
       "label": {
-        "type": "input",
         "label": "Label Text",
-        "value": "Single Button"
+        "type": "input",
+        "value": null
       },
       "buttonlabel": {
-        "type": "input",
         "label": "Button Label",
-        "value": "Button"
+        "type": "input",
+        "value": "Cancel"
+      },
+      "buttontype": {
+        "label": "Button Type",
+        "type": "select",
+        "value": [
+          {
+            "value": "btn-default",
+            "label": "Default",
+            "selected": true
+          },
+          {
+            "value": "btn-primary",
+            "label": "Primary",
+            "selected": false
+          },
+          {
+            "value": "btn-info",
+            "label": "Info",
+            "selected": false
+          },
+          {
+            "value": "btn-success",
+            "label": "Success",
+            "selected": false
+          },
+          {
+            "value": "btn-warning",
+            "label": "Warning",
+            "selected": false
+          },
+          {
+            "value": "btn-danger",
+            "label": "Danger",
+            "selected": false
+          },
+          {
+            "value": "btn-inverse",
+            "label": "Inverse",
+            "selected": false
+          }
+        ]
       }
-    },
-    "title": "Single Button"
+    }
   },
   {
+    "title": "Single Button",
     "fields": {
-      "button2type": {
-        "type": "select",
-        "label": "Button Type",
-        "value": [
-          {
-            "label": "Default",
-            "value": "btn-default",
-            "selected": false
-          },
-          {
-            "label": "Primary",
-            "value": "btn-primary",
-            "selected": false
-          },
-          {
-            "label": "Info",
-            "value": "btn-info",
-            "selected": false
-          },
-          {
-            "label": "Success",
-            "value": "btn-success",
-            "selected": false
-          },
-          {
-            "label": "Warning",
-            "value": "btn-warning",
-            "selected": false
-          },
-          {
-            "label": "Danger",
-            "value": "btn-danger",
-            "selected": true
-          },
-          {
-            "label": "Inverse",
-            "value": "btn-inverse",
-            "selected": false
-          }
-        ]
-      },
       "id": {
+        "label": "ID / Name",
         "type": "input",
-        "label": "Button 1 ID / Name",
-        "value": "button1id"
+        "value": "singlebutton"
       },
-      "id2": {
-        "type": "input",
-        "label": "Button 2 ID / Name",
-        "value": "button2id"
+      "actiontype": {
+        "label": "Action",
+        "type": "label",
+        "value": "Submit"
       },
       "label": {
-        "type": "input",
         "label": "Label Text",
-        "value": "Double Button"
+        "type": "input",
+        "value": null
       },
-      "button1type": {
-        "type": "select",
+      "buttonlabel": {
+        "label": "Button Label",
+        "type": "input",
+        "value": "Submit"
+      },
+      "buttontype": {
         "label": "Button Type",
+        "type": "select",
         "value": [
           {
-            "label": "Default",
             "value": "btn-default",
-            "selected": false
-          },
-          {
-            "label": "Primary",
-            "value": "btn-primary",
-            "selected": false
-          },
-          {
-            "label": "Info",
-            "value": "btn-info",
-            "selected": false
-          },
-          {
-            "label": "Success",
-            "value": "btn-success",
+            "label": "Default",
             "selected": true
           },
           {
-            "label": "Warning",
+            "value": "btn-primary",
+            "label": "Primary",
+            "selected": false
+          },
+          {
+            "value": "btn-info",
+            "label": "Info",
+            "selected": false
+          },
+          {
+            "value": "btn-success",
+            "label": "Success",
+            "selected": false
+          },
+          {
             "value": "btn-warning",
+            "label": "Warning",
             "selected": false
           },
           {
-            "label": "Danger",
             "value": "btn-danger",
+            "label": "Danger",
             "selected": false
           },
           {
-            "label": "Inverse",
             "value": "btn-inverse",
+            "label": "Inverse",
+            "selected": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "Double Button",
+    "fields": {
+      "id": {
+        "label": "Button 1 ID / Name",
+        "type": "input",
+        "value": "button1id"
+      },
+      "actiontype1": {
+        "label": "Action",
+        "type": "label",
+        "value": "Submit"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": null
+      },
+      "button1label": {
+        "label": "Button Label",
+        "type": "input",
+        "value": "Submit"
+      },
+      "button1type": {
+        "label": "Button Type",
+        "type": "select",
+        "value": [
+          {
+            "value": "btn-default",
+            "label": "Default",
+            "selected": true
+          },
+          {
+            "value": "btn-primary",
+            "label": "Primary",
+            "selected": false
+          },
+          {
+            "value": "btn-info",
+            "label": "Info",
+            "selected": false
+          },
+          {
+            "value": "btn-success",
+            "label": "Success",
+            "selected": false
+          },
+          {
+            "value": "btn-warning",
+            "label": "Warning",
+            "selected": false
+          },
+          {
+            "value": "btn-danger",
+            "label": "Danger",
+            "selected": false
+          },
+          {
+            "value": "btn-inverse",
+            "label": "Inverse",
             "selected": false
           }
         ]
       },
-      "button1label": {
+      "id2": {
+        "label": "Button 2 ID / Name",
         "type": "input",
-        "label": "Button Label",
-        "value": "Good Button"
+        "value": "button2id"
+      },
+      "actiontype2": {
+        "label": "Action",
+        "type": "label",
+        "value": "Cancel"
       },
       "button2label": {
-        "type": "input",
         "label": "Button Label",
-        "value": "Scary Button"
+        "type": "input",
+        "value": "Cancel"
+      },
+      "button2type": {
+        "label": "Button Type",
+        "type": "select",
+        "value": [
+          {
+            "value": "btn-default",
+            "label": "Default",
+            "selected": true
+          },
+          {
+            "value": "btn-primary",
+            "label": "Primary",
+            "selected": false
+          },
+          {
+            "value": "btn-info",
+            "label": "Info",
+            "selected": false
+          },
+          {
+            "value": "btn-success",
+            "label": "Success",
+            "selected": false
+          },
+          {
+            "value": "btn-warning",
+            "label": "Warning",
+            "selected": false
+          },
+          {
+            "value": "btn-danger",
+            "label": "Danger",
+            "selected": false
+          },
+          {
+            "value": "btn-inverse",
+            "label": "Inverse",
+            "selected": false
+          }
+        ]
       }
-    },
-    "title": "Double Button"
+    }
+  },
+  {
+    "title": "Double Button",
+    "fields": {
+      "id": {
+        "label": "Button 1 ID / Name",
+        "type": "input",
+        "value": "button1id"
+      },
+      "actiontype1": {
+        "label": "Action",
+        "type": "label",
+        "value": "Cancel"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": null
+      },
+      "button1label": {
+        "label": "Button Label",
+        "type": "input",
+        "value": "Cancel"
+      },
+      "button1type": {
+        "label": "Button Type",
+        "type": "select",
+        "value": [
+          {
+            "value": "btn-default",
+            "label": "Default",
+            "selected": true
+          },
+          {
+            "value": "btn-primary",
+            "label": "Primary",
+            "selected": false
+          },
+          {
+            "value": "btn-info",
+            "label": "Info",
+            "selected": false
+          },
+          {
+            "value": "btn-success",
+            "label": "Success",
+            "selected": false
+          },
+          {
+            "value": "btn-warning",
+            "label": "Warning",
+            "selected": false
+          },
+          {
+            "value": "btn-danger",
+            "label": "Danger",
+            "selected": false
+          },
+          {
+            "value": "btn-inverse",
+            "label": "Inverse",
+            "selected": false
+          }
+        ]
+      },
+      "id2": {
+        "label": "Button 2 ID / Name",
+        "type": "input",
+        "value": "button2id"
+      },
+      "actiontype2": {
+        "label": "Action",
+        "type": "label",
+        "value": "Submit"
+      },
+      "button2label": {
+        "label": "Button Label",
+        "type": "input",
+        "value": "Submit"
+      },
+      "button2type": {
+        "label": "Button Type",
+        "type": "select",
+        "value": [
+          {
+            "value": "btn-default",
+            "label": "Default",
+            "selected": true
+          },
+          {
+            "value": "btn-primary",
+            "label": "Primary",
+            "selected": false
+          },
+          {
+            "value": "btn-info",
+            "label": "Info",
+            "selected": false
+          },
+          {
+            "value": "btn-success",
+            "label": "Success",
+            "selected": false
+          },
+          {
+            "value": "btn-warning",
+            "label": "Warning",
+            "selected": false
+          },
+          {
+            "value": "btn-danger",
+            "label": "Danger",
+            "selected": false
+          },
+          {
+            "value": "btn-inverse",
+            "label": "Inverse",
+            "selected": false
+          }
+        ]
+      }
+    }
   }
 ]

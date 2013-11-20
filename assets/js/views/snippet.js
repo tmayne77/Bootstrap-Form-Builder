@@ -2,6 +2,7 @@ define([
   "jquery", "underscore", "backbone"
   , "text!templates/popover/popover-main.html"
   , "text!templates/popover/popover-input.html"
+  , "text!templates/popover/popover-label.html"  
   , "text!templates/popover/popover-select.html"
   , "text!templates/popover/popover-textarea.html"
   , "text!templates/popover/popover-textarea-split.html"
@@ -12,6 +13,7 @@ define([
   $, _, Backbone
   , _PopoverMain
   , _PopoverInput
+  , _PopoverLabel
   , _PopoverSelect
   , _PopoverTextArea
   , _PopoverTextAreaSplit
@@ -25,6 +27,7 @@ define([
       this.template = _.template(_snippetTemplates[this.model.idFriendlyTitle()])
       this.popoverTemplates = {
         "input" : _.template(_PopoverInput)
+		, "label" : _.template(_PopoverLabel)
         , "select" : _.template(_PopoverSelect)
         , "textarea" : _.template(_PopoverTextArea)
         , "textarea-split" : _.template(_PopoverTextAreaSplit)
