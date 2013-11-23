@@ -1,0 +1,14 @@
+<!-- reCaptcha -->
+<div class="control-group">
+  <script type="text/javascript">
+		$(document).ready(function() {
+		  $.getScript("http://www.google.com/recaptcha/api/js/recaptcha_ajax.js", function() { Recaptcha.create("6LdNHeoSAAAAAD3HUK53Bnt3WAQyU7sLkAJY78Rs", "whiteReCaptcha", {
+					theme: "<%= theme %>"});  });
+		})
+		function LoadCaptcha() {
+				Recaptcha.create("6LdNHeoSAAAAAD3HUK53Bnt3WAQyU7sLkAJY78Rs", "whiteReCaptcha", {
+					theme: "<%= theme %>"});
+		}
+  </script>
+  <div class="controls" id="whiteReCaptcha" ></div>
+</div>

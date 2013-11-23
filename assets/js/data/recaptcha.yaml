@@ -1,0 +1,23 @@
+-
+  title  : reCAPTCHA
+  fields : 
+    theme:
+      label: Theme
+      type: select
+      value:
+        -
+          value    : white
+          label    : White
+          selected : true
+        -
+          value    : red
+          label    : Red
+          selected : false
+        -
+          value    : clean
+          label    : Clean
+          selected : false
+        -
+          value    : blackglass
+          label    : Black Glass
+          selected : false
